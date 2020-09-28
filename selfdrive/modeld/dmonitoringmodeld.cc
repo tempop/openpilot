@@ -37,7 +37,7 @@ int main(int argc, char **argv) {
   {
     LOGD("waiting for modeld init");
     SubMaster sm({"model"});
-    while (!do_exit && !sm.updated('model')) {
+    while (!do_exit && !sm.updated("model")) {
       sm.update(1000);
     }
   }
